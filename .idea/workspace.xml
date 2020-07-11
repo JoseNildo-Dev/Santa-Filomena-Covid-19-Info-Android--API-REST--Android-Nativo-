@@ -7,7 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70cae088-8029-46f0-98c8-4d32c2fd29d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +47,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/json" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/json" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -130,9 +140,17 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="267" y="110" key="IDE.errors.dialog/0.0.1366.732@0.0.1366.732" timestamp="1594483733498" />
+    <state x="395" y="82" key="MultipleFileMergeDialog" timestamp="1594483827138">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="395" y="82" key="MultipleFileMergeDialog/0.0.1366.732@0.0.1366.732" timestamp="1594483827138" />
     <state x="180" y="0" key="SettingsEditor" timestamp="1594483430079">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="180" y="0" key="SettingsEditor/0.0.1366.732@0.0.1366.732" timestamp="1594483430079" />
+    <state x="261" y="58" key="git4idea.branch.GitSmartOperationDialog" timestamp="1594483814965">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="261" y="58" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.732@0.0.1366.732" timestamp="1594483814965" />
   </component>
 </project>

@@ -1,7 +1,10 @@
 package com.josenildo.santafilomenacovid_19info.json;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
+
+import com.josenildo.santafilomenacovid_19info.MainActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -14,6 +17,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import static androidx.core.content.ContextCompat.startActivity;
 
 public class JsonTask extends AsyncTask<String, String, String> {
 

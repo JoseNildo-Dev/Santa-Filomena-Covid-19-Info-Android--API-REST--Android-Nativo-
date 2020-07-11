@@ -14,8 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent mainToSplash = new Intent(this, SplashActivity.class);
-        startActivity(mainToSplash);
+
 
     }
 }

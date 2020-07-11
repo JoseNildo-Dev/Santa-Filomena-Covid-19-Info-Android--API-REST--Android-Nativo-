@@ -3,9 +3,12 @@ package com.josenildo.santafilomenacovid_19info;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import com.josenildo.santafilomenacovid_19info.json.JsonTask;
 
@@ -26,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash);
 
         // Oculta a barra de titulo no SDK 16 ou superior
         ActionBar actionBar = getSupportActionBar();

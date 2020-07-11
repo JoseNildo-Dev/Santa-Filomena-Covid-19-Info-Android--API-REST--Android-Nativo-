@@ -2,6 +2,7 @@ package com.josenildo.santafilomenacovid_19info;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.josenildo.santafilomenacovid_19info.json.JsonTask;
@@ -13,7 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        Intent mainToSplash = new Intent(this, SplashActivity.class);
+        startActivity(mainToSplash);
 
     }
 }

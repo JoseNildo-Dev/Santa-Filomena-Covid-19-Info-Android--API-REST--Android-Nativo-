@@ -71,7 +71,14 @@ public class JsonTask extends AsyncTask<String, String, String> {
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
 
-        Log.i("meuLog",""+result);
+        //Log.i("meuLog",""+result);
+
+        try {
+            JSONObject casosJson = new JSONObject(result);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
         /*
         try {

@@ -2,12 +2,17 @@ package com.josenildo.santafilomenacovid_19info;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 import com.josenildo.santafilomenacovid_19info.json.JsonTask;
@@ -34,6 +39,27 @@ public class SplashActivity extends AppCompatActivity {
         // Oculta a barra de titulo no SDK 16 ou superior
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Cria um intent para a transição
+                Intent splashToMain = new Intent(SplashActivity.this, MainActivity.class);
+                // Cria uma animação de fade in
+                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.fade_in, R.anim.down_scale_sumir);
+
+                //View splashScreen = (View) findViewById(R.anim.down_scale_sumir);
+
+                //Animation aniSlide = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.down_scale_sumir);
+                //splashScreen.startAnimation(aniSlide);
+
+                // inicia a Main Activity
+                ActivityCompat.startActivity(SplashActivity.this, splashToMain, activityOptionsCompat.toBundle());
+
+                // Destroi a activity, impossibilitando do usuario voltar a mesma caso use o botão 'voltar'
+                finish();
+            }
+        }, 5000);
 
 
 

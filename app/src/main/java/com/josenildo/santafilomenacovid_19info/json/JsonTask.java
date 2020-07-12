@@ -74,7 +74,11 @@ public class JsonTask extends AsyncTask<String, String, String> {
         //Log.i("meuLog",""+result);
 
         try {
-            JSONObject casosJson = new JSONObject(result);
+            JSONObject json = new JSONObject(result);
+            JSONObject getResults = json.getJSONObject("results");
+            JSONObject getDados = getResults.getJSONObject("0");
+
+            //for (int i = 0;)
 
         } catch (JSONException e) {
             e.printStackTrace();

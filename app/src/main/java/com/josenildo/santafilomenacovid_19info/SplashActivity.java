@@ -15,12 +15,11 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
-import com.josenildo.santafilomenacovid_19info.json.JsonTask;
 
 public class SplashActivity extends AppCompatActivity {
 
     // String contendo o link para a api REST, obtendo os dados de Santa Filomena a partir do código
-    String jsonUrl = "https://brasil.io/api/dataset/covid19/caso/data/?format=json&is_last=True&state=PE&city_ibge_code=2612554";
+    //String jsonUrl = "https://brasil.io/api/dataset/covid19/caso/data/?format=json&is_last=True&state=PE&city_ibge_code=2612554";
     // da cidade fornecido pelo IBGE (2612554).
     //String jsonUrl = "https://brasil.io/api/dataset/covid19/caso_full/data/?format=json&is_last=True&state=PE";
 
@@ -46,11 +45,11 @@ public class SplashActivity extends AppCompatActivity {
                 // Cria um intent para a transição
                 Intent splashToMain = new Intent(SplashActivity.this, MainActivity.class);
                 // Cria uma animação de fade in
-                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.fade_in, R.anim.down_scale_sumir);
+                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.fade_in, R.anim.zoom_out);
 
-                //View splashScreen = (View) findViewById(R.anim.down_scale_sumir);
+                //View splashScreen = (View) findViewById(R.anim.zoom_in);
 
-                //Animation aniSlide = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.down_scale_sumir);
+                //Animation aniSlide = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.zoom_in);
                 //splashScreen.startAnimation(aniSlide);
 
                 // inicia a Main Activity
@@ -63,6 +62,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
 
-        new JsonTask().execute(jsonUrl);
+        //new JsonTask().execute(jsonUrl);
+
     }
 }

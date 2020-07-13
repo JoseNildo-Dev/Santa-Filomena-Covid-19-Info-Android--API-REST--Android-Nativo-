@@ -1,11 +1,15 @@
 package com.josenildo.santafilomenacovid_19info;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -55,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
     TextView lblOrderForPlace;
     TextView lblPlaceType;
     TextView lblEstado;
+    private androidx.appcompat.widget.Toolbar mainActivityToolbar;
 
 
     @Override
@@ -62,8 +67,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar mainToolbar = findViewById(R.id.mainToolbar);
-        setSupportActionBar(mainToolbar);
+        //Toolbar mainToolbar = findViewById(R.id.mainActivityToolbar);
+
+        mainActivityToolbar = findViewById(R.id.mainActivityToolbar);
+        setSupportActionBar(mainActivityToolbar);
+        getWindow().setFlags(Window.FEATURE_ACTION_BAR, ActionBar.DISPLAY_SHOW_CUSTOM);
+
 
         lblCidade = (TextView) findViewById(R.id.lblCidade);
         lblIbgeCode = (TextView)  findViewById(R.id.lblIbgeCode);
@@ -79,10 +88,6 @@ public class MainActivity extends AppCompatActivity {
 
         new JsonTask().execute(jsonUrl);
     }
-
-    private void setSupportActionBar(Toolbar mainToolbar) {
-    }
-
 
 
 
@@ -178,4 +183,23 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_sobre:
+                // User chose the "Settings" item, show the app about UI...
+                return true;
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.toolbar_menu_main_activity, menu);
+        return true;
+    }
 }

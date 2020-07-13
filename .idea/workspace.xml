@@ -1,22 +1,36 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-<<<<<<< Updated upstream
-      <config />
-=======
       <config>
         <device id="4.65in 720p (Galaxy Nexus)" />
-        <device id="4in WVGA (Nexus S)" />
       </config>
->>>>>>> Stashed changes
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="70cae088-8029-46f0-98c8-4d32c2fd29d3" name="Default Changelist" comment="" />
-=======
-    <list default="true" id="70cae088-8029-46f0-98c8-4d32c2fd29d3" name="Default Changelist" comment="Modificação no layout para melhor organização.">
+    <list default="true" id="70cae088-8029-46f0-98c8-4d32c2fd29d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/down_scale_sumir.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fade_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fade_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/mover_direita.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/mover_esquerda.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/degrade.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -27,13 +41,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/json/JsonTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/fonts/arial.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/json/JsonTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/json/JsonTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
     </list>
->>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,45 +67,61 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
-<<<<<<< Updated upstream
-=======
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
-        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
->>>>>>> Stashed changes
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="José Nildo &lt;58955100+josenildo-dev@users.noreply.github.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="alpha0.02" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1eXzQC63NZlRCfoiH1YXTim1J7c" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="4A346GH7S" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-11T17:09:53.889Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/anim" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.296314176">
+      <recent name="com.josenildo.santafilomenacovid_19info" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/anim" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/modeldata" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/json" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -96,7 +131,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -159,178 +194,15 @@
       <option name="presentableId" value="Default" />
       <updated>1594482708461</updated>
     </task>
-    <task id="LOCAL-00001" summary="Animação de zoom-out para Activities">
-      <created>1594589410221</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1594589410221</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Animação de zoom-in para Activities">
-      <created>1594641959403</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1594641959403</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Modificação no layout para melhor organização.">
-      <created>1594644187469</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1594644187469</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Não é mais responsavel por chamar JsonTask() (agora está dentro de MainActivity.java), apenas carrega a MainActivity depois de 5 segundos">
-      <created>1594651583601</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1594651583601</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Arquivos de fontes externas.">
-      <created>1594660070448</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1594660070448</updated>
-    </task>
-    <task id="LOCAL-00006" summary="JsonTask() agora está dentro de MainActivity, visto que não funciona de outra forma, agora os dados extraidos da API são exibidos na tela.">
-      <created>1594662070174</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1594662070174</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Mudança no tema do app.">
-      <created>1594662139812</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1594662139812</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Imagem de background da MainActivity, obtida no site: https://unsplash.com/photos/rnr8D3FNUNY&#10;Feita por: Fusion Medical Animation">
-      <created>1594662398675</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1594662398675</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Segunda imagem de background da MainActivity, mesma fonte da anterior">
-      <created>1594664464573</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1594664464573</updated>
-    </task>
-    <task id="LOCAL-00010" summary="SplashScreen vazia">
-      <created>1594664525699</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1594664525700</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Modificação no layout para melhor organização e adição de uma imagem de background.">
-      <created>1594664563649</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1594664563649</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adcionado uma Toolbar vazia no MainActivity e comentado o código de remoção da bara de ação na SplashScreen (visto que a mesma foi removida no AndroidManifest.xml), se descomentado o código, o app crasha assim que a activity é executada (celular de teste: Quantum MUV Pro Q5, Android 6.0 API 23)">
-      <created>1594670495379</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1594670495379</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Menu da action bar">
-      <created>1594681838377</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1594681838377</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Criação de um tema personalizado para corrigir problemas de crash ao tentar modificar a ActionBar">
-      <created>1594681896733</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1594681896733</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Adição da string &quot;action_sobre&quot;, contendo o valor &quot;Sobre&quot;, utilizado no menu da ActionBar">
-      <created>1594681975281</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1594681975281</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Adição e correção de uma ActionBar (Toolbox)">
-      <created>1594682039237</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1594682039237</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Adição de um tema customizado para essa Activity">
-      <created>1594682150078</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1594682150078</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Correções no menu da toolbat da MainActivity">
-      <created>1594682186855</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1594682186855</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Fontes Arial e Arial Bold">
-      <created>1594682224807</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1594682224807</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Correção do crash ao modificar a ActionBar">
-      <created>1594682285652</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1594682285652</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/Santa-Filomena-Covid-19-Info-for-Androd--API-REST-de-Brasil.io-" />
     </ignored-roots>
-    <MESSAGE value="Animação de zoom-out para Activities" />
-    <MESSAGE value="Animação de zoom-in para Activities" />
-    <MESSAGE value="Modificação no layout para melhor organização." />
-    <MESSAGE value="Não é mais responsavel por chamar JsonTask() (agora está dentro de MainActivity.java), apenas carrega a MainActivity depois de 5 segundos" />
-    <MESSAGE value="Arquivos de fontes externas." />
-    <MESSAGE value="JsonTask() agora está dentro de MainActivity, visto que não funciona de outra forma, agora os dados extraidos da API são exibidos na tela." />
-    <MESSAGE value="Mudança no tema do app." />
-    <MESSAGE value="Imagem de background da MainActivity, obtida no site: https://unsplash.com/photos/rnr8D3FNUNY&#10;Feita por: Fusion Medical Animation" />
-    <MESSAGE value="Segunda imagem de background da MainActivity, mesma fonte da anterior" />
-    <MESSAGE value="SplashScreen vazia" />
-    <MESSAGE value="Modificação no layout para melhor organização e adição de uma imagem de background." />
-    <MESSAGE value="Adcionado uma Toolbar vazia no MainActivity e comentado o código de remoção da bara de ação na SplashScreen (visto que a mesma foi removida no AndroidManifest.xml), se descomentado o código, o app crasha assim que a activity é executada (celular de teste: Quantum MUV Pro Q5, Android 6.0 API 23)" />
-    <MESSAGE value="Menu da action bar" />
-    <MESSAGE value="Criação de um tema personalizado para corrigir problemas de crash ao tentar modificar a ActionBar" />
-    <MESSAGE value="Adição da string &quot;action_sobre&quot;, contendo o valor &quot;Sobre&quot;, utilizado no menu da ActionBar" />
-    <MESSAGE value="Adição e correção de uma ActionBar (Toolbox)" />
-    <MESSAGE value="Adição de um tema customizado para essa Activity" />
-    <MESSAGE value="Correções no menu da toolbat da MainActivity" />
-    <MESSAGE value="Fontes Arial e Arial Bold" />
-    <MESSAGE value="Correção do crash ao modificar a ActionBar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correção do crash ao modificar a ActionBar" />
   </component>
   <component name="WindowStateProjectService">
-<<<<<<< Updated upstream
-=======
     <state x="279" y="26" key="#Gradle" timestamp="1594488071875">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -339,50 +211,30 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="204" y="99" key="#PSD/0.0.1366.732@0.0.1366.732" timestamp="1594488120091" />
-    <state x="492" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1594602453885">
-      <screen x="0" y="0" width="1366" height="732" />
-    </state>
-    <state x="492" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.732@0.0.1366.732" timestamp="1594602453885" />
     <state x="417" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594496909161">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="417" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.732@0.0.1366.732" timestamp="1594496909161" />
-    <state x="267" y="122" key="AndroidCreateResourceFileDialog" timestamp="1594673788680">
+    <state x="267" y="122" key="AndroidCreateResourceFileDialog" timestamp="1594566416751">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="267" y="122" key="AndroidCreateResourceFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1594673788680" />
-    <state x="540" y="197" key="AndroidCreateXmlResourceDialog" timestamp="1594670674346">
+    <state x="267" y="122" key="AndroidCreateResourceFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1594566416751" />
+    <state width="1320" height="128" key="GridCell.Tab.0.bottom" timestamp="1594584150953">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="540" y="197" key="AndroidCreateXmlResourceDialog/0.0.1366.732@0.0.1366.732" timestamp="1594670674346" />
-    <state x="155" y="0" width="1127" height="736" key="CommitChangelistDialog2" timestamp="1594682285450">
+    <state width="1320" height="128" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1594584150953" />
+    <state width="1320" height="128" key="GridCell.Tab.0.center" timestamp="1594584150952">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="155" y="0" width="1127" height="736" key="CommitChangelistDialog2/0.0.1366.732@0.0.1366.732" timestamp="1594682285450" />
-    <state x="168" y="0" width="1100" height="732" key="DiffContextDialog" timestamp="1594660066342">
+    <state width="1320" height="128" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1594584150952" />
+    <state width="1320" height="128" key="GridCell.Tab.0.left" timestamp="1594584150950">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="168" y="0" width="1100" height="732" key="DiffContextDialog/0.0.1366.732@0.0.1366.732" timestamp="1594660066342" />
-    <state x="367" y="122" key="Downloadable.Font.Dialog.Size" timestamp="1594659814788">
+    <state width="1320" height="128" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1594584150950" />
+    <state width="1320" height="128" key="GridCell.Tab.0.right" timestamp="1594584150952">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="367" y="122" key="Downloadable.Font.Dialog.Size/0.0.1366.732@0.0.1366.732" timestamp="1594659814788" />
-    <state width="1320" height="128" key="GridCell.Tab.0.bottom" timestamp="1594681811492">
-      <screen x="0" y="0" width="1366" height="732" />
-    </state>
-    <state width="1320" height="128" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1594681811492" />
-    <state width="1320" height="128" key="GridCell.Tab.0.center" timestamp="1594681811492">
-      <screen x="0" y="0" width="1366" height="732" />
-    </state>
-    <state width="1320" height="128" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1594681811492" />
-    <state width="1320" height="128" key="GridCell.Tab.0.left" timestamp="1594681811491">
-      <screen x="0" y="0" width="1366" height="732" />
-    </state>
-    <state width="1320" height="128" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1594681811491" />
-    <state width="1320" height="128" key="GridCell.Tab.0.right" timestamp="1594681811492">
-      <screen x="0" y="0" width="1366" height="732" />
-    </state>
-    <state width="1320" height="128" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1594681811492" />
+    <state width="1320" height="128" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1594584150952" />
     <state x="267" y="110" key="IDE.errors.dialog" timestamp="1594483733498">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -391,33 +243,17 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="395" y="82" key="MultipleFileMergeDialog/0.0.1366.732@0.0.1366.732" timestamp="1594483827138" />
->>>>>>> Stashed changes
     <state x="180" y="0" key="SettingsEditor" timestamp="1594483430079">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="180" y="0" key="SettingsEditor/0.0.1366.732@0.0.1366.732" timestamp="1594483430079" />
-<<<<<<< Updated upstream
-=======
-    <state x="279" y="100" key="Vcs.Push.Dialog.v2" timestamp="1594682405352">
+    <state x="362" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1594513523714">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="279" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1594682405352" />
-    <state x="362" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1594641885820">
-      <screen x="0" y="0" width="1366" height="732" />
-    </state>
-    <state x="362" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1594641885820" />
-    <state x="337" y="0" width="691" height="736" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594596151761">
-      <screen x="0" y="0" width="1366" height="732" />
-    </state>
-    <state x="337" y="0" width="691" height="736" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.732@0.0.1366.732" timestamp="1594596151761" />
+    <state x="362" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1594513523714" />
     <state x="261" y="58" key="git4idea.branch.GitSmartOperationDialog" timestamp="1594483814965">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="261" y="58" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.732@0.0.1366.732" timestamp="1594483814965" />
-    <state x="429" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1594645892970">
-      <screen x="0" y="0" width="1366" height="732" />
-    </state>
-    <state x="429" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.732@0.0.1366.732" timestamp="1594645892970" />
->>>>>>> Stashed changes
   </component>
 </project>

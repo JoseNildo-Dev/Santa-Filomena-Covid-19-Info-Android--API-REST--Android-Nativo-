@@ -4,15 +4,345 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_main_activity2"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+
+    <include
+        android:id="@+id/mainActivityToolbar"
+        layout="@layout/main_activity_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivityToolbar">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtCidade"
+                android:layout_width="51dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Cidade:"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtIbgeCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Código no IBGE:"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCidade" />
+
+            <TextView
+                android:id="@+id/txtConfirmados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Casos já confirmados:"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtIbgeCode" />
+
+            <TextView
+                android:id="@+id/txtCasosPor100K"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Casos por 100 mil habitantes"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtConfirmados" />
+
+            <TextView
+                android:id="@+id/txtData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Data de atualização:"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCasosPor100K" />
+
+            <TextView
+                android:id="@+id/txtTaxaMortalidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Taxa de mortalidade"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtData" />
+
+            <TextView
+                android:id="@+id/txtMortesConfirmadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Mortes confirmadas:"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTaxaMortalidade" />
+
+            <TextView
+                android:id="@+id/txtPopulacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="População estimada em 2019:"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMortesConfirmadas" />
+
+            <TextView
+                android:id="@+id/txtOrderForPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Order for place:"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPopulacao" />
+
+
+            <TextView
+                android:id="@+id/txtPlaceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Classificação:"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtOrderForPlace" />
+
+
+            <TextView
+                android:id="@+id/txtEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Estado:"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPlaceType" />
+
+            <TextView
+                android:id="@+id/lblCidade"
+                android:layout_width="264dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtCidade"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblIbgeCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtIbgeCode"
+                app:layout_constraintTop_toBottomOf="@+id/lblCidade" />
+
+            <TextView
+                android:id="@+id/lblConfirmados"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtConfirmados"
+                app:layout_constraintTop_toBottomOf="@+id/lblIbgeCode" />
+
+            <TextView
+                android:id="@+id/lblCasosPor100K"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtCasosPor100K"
+                app:layout_constraintTop_toBottomOf="@+id/lblConfirmados" />
+
+            <TextView
+                android:id="@+id/lblData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null:"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtData"
+                app:layout_constraintTop_toBottomOf="@+id/lblCasosPor100K" />
+
+            <TextView
+                android:id="@+id/lblTaxaMortalidade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtTaxaMortalidade"
+                app:layout_constraintTop_toBottomOf="@+id/lblData" />
+
+            <TextView
+                android:id="@+id/lblMortesConfirmadas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtMortesConfirmadas"
+                app:layout_constraintTop_toBottomOf="@+id/lblTaxaMortalidade" />
+
+            <TextView
+                android:id="@+id/lblPopulacao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtPopulacao"
+                app:layout_constraintTop_toBottomOf="@+id/lblMortesConfirmadas" />
+
+            <TextView
+                android:id="@+id/lblOrderForPlace"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtOrderForPlace"
+                app:layout_constraintTop_toBottomOf="@+id/lblPopulacao" />
+
+            <TextView
+                android:id="@+id/lblPlaceType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtPlaceType"
+                app:layout_constraintTop_toBottomOf="@+id/lblOrderForPlace" />
+
+            <TextView
+                android:id="@+id/lblEstado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="null"
+                android:textColor="#DFDDDD"
+                android:textSize="15sp"
+                app:fontFamily="@font/arialbd"
+                app:layout_constraintStart_toEndOf="@+id/txtEstado"
+                app:layout_constraintTop_toBottomOf="@+id/lblPlaceType" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

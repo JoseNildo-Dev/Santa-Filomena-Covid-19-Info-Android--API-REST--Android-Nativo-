@@ -36,8 +36,8 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         // Oculta a barra de titulo no SDK 16 ou superior
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+        //ActionBar actionBar = getSupportActionBar();
+        //actionBar.hide();
 
         new Handler().postDelayed(new Runnable() {
             @Override

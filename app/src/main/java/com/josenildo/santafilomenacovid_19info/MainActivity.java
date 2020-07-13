@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import com.josenildo.santafilomenacovid_19info.modeldata.InfosCovid;
 
@@ -61,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toolbar mainToolbar = findViewById(R.id.mainToolbar);
+        setSupportActionBar(mainToolbar);
+
         lblCidade = (TextView) findViewById(R.id.lblCidade);
         lblIbgeCode = (TextView)  findViewById(R.id.lblIbgeCode);
         lblConfirmados = (TextView)  findViewById(R.id.lblConfirmados);
@@ -74,24 +78,12 @@ public class MainActivity extends AppCompatActivity {
         lblEstado = findViewById(R.id.lblEstado);
 
         new JsonTask().execute(jsonUrl);
-        /*
-
-        txtCidade = findViewById(R.id.txtCidade);
-        txtIbgeCode = findViewById(R.id.txtIbgeCode);
-        txtConfirmados = findViewById(R.id.txtConfirmados);
-        txtCasosConfirmados100k = findViewById(R.id.txtCasosPor100K);
-        txtData = findViewById(R.id.txtData);
-        txtTaxaMortlidade = findViewById(R.id.txtTaxaMortalidade);
-        txtMortes = findViewById(R.id.txtMortesConfirmadas);
-        txtPopulacao2019 = findViewById(R.id.txtPopulacao);
-        txtOrderForPlace = findViewById(R.id.txtOrderForPlace);
-        txtPlaceType = findViewById(R.id.txtPlaceType);
-        txtEstado = findViewById(R.id.txtEstado);
-
-         */
-
-
     }
+
+    private void setSupportActionBar(Toolbar mainToolbar) {
+    }
+
+
 
 
     public class JsonTask extends AsyncTask<String, String, String> {
@@ -145,27 +137,13 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
 
-            Log.i("meuLog",""+result);
-
             try {
                 JSONObject json = new JSONObject(result);
 
-                //titulo.setText(listaJson.getString("titulo"));
-
-                Log.i("Json", ""+json);
-
                 JSONArray getResults = json.getJSONArray("results");
-
-                Log.i("getResults", "" + getResults);
-
-                //JSONObject getDados = getResults.getJSONObject("0");
-
-                Log.i("getResults", "getDados: " + getResults);
 
                 for (int i = 0; i < getResults.length(); i++) {
                     JSONObject dados = getResults.getJSONObject(Integer.parseInt(String.valueOf(i)));
-
-                    Log.i("getResults", "Dados: " + dados);
 
                     String cidade = dados.getString("city");
                     int cityIbgeCode = dados.getInt("city_ibge_code");
@@ -181,8 +159,6 @@ public class MainActivity extends AppCompatActivity {
 
                     InfosCovid infosCovid = new InfosCovid(cidade, cityIbgeCode, confirmados, casosConfirmadosPor100k, data, taxaMortalidade, mortes, populacaoEstimada2019, orderForPlace, placeType, estado);
 
-
-
                     lblCidade.setText(String.valueOf(cidade));
                     lblIbgeCode.setText(String.valueOf(cityIbgeCode));
                     lblConfirmados.setText(String.valueOf(confirmados));
@@ -193,41 +169,12 @@ public class MainActivity extends AppCompatActivity {
                     lblPopulacao2019.setText(String.valueOf(populacaoEstimada2019));
                     lblOrderForPlace.setText(String.valueOf(orderForPlace));
                     lblPlaceType.setText(String.valueOf(placeType));
-
-
-
-
-
-
+                    lblEstado.setText((String.valueOf(estado)));
                 }
 
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
-        /*
-        try {
-            JSONObject listaJson = new JSONObject(result);
-            titulo.setText(listaJson.getString("titulo"));
-            JSONArray questionario = listaJson.getJSONArray("questionario");
-
-            for(int i=0; i<questionario.length(); i++){
-                JSONObject questao = questionario.getJSONObject(i);
-
-                String perg = questao.getString("Pergunta");
-                String ra = questao.getString("respA");
-                String rb = questao.getString("respB");
-                String rc = questao.getString("respC");
-                int correta = questao.getInt("correta");
-
-                Questao minhaQuestao = new Questao(perg,ra,rb,rc,correta);
-                questoes.add(minhaQuestao);
-
-            }
-        }catch (JSONException e){e.printStackTrace();}
-
-
-         */
         }
     }
 

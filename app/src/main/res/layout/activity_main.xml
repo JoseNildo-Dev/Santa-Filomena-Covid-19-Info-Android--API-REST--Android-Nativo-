@@ -17,17 +17,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <LinearLayout
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/txtCidade"
                 android:layout_width="51dp"
                 android:layout_height="18dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="16dp"
                 android:text="Cidade:" />
 
@@ -35,92 +38,302 @@
                 android:id="@+id/txtIbgeCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtCidade"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Código no IBGE:" />
 
             <TextView
                 android:id="@+id/txtConfirmados"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtIbgeCode"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Casos já confirmados:" />
 
             <TextView
                 android:id="@+id/txtCasosPor100K"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtConfirmados"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Casos por 100 mil habitantes" />
 
             <TextView
                 android:id="@+id/txtData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtCasosPor100K"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Data de atualização:" />
 
             <TextView
                 android:id="@+id/txtTaxaMortalidade"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtData"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Taxa de mortalidade" />
 
             <TextView
                 android:id="@+id/txtMortesConfirmadas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtTaxaMortalidade"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Mortes confirmadas:" />
 
             <TextView
                 android:id="@+id/txtPopulacao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtMortesConfirmadas"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
                 android:text="População estimada em 2019:" />
 
             <TextView
                 android:id="@+id/txtOrderForPlace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtPopulacao"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Order for place:" />
+
 
             <TextView
                 android:id="@+id/txtPlaceType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtOrderForPlace"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Classificação:" />
 
             <TextView
                 android:id="@+id/txtEstado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtPlaceType"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Estado:" />
-        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/lblCidade"
+                android:layout_width="51dp"
+                android:layout_height="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="236dp"
+                android:layout_marginRight="236dp"
+                android:layout_toEndOf="@+id/txtCidade"
+                android:layout_toRightOf="@+id/txtCidade"
+                android:text="null" />
+
+            <TextView
+                android:id="@+id/lblIbgeCode"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblCidade"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginRight="200dp"
+                android:layout_toEndOf="@+id/txtIbgeCode"
+                android:layout_toRightOf="@+id/txtIbgeCode"
+                android:text="null" />
+
+            <TextView
+                android:id="@+id/lblConfirmados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblIbgeCode"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="173dp"
+                android:layout_marginRight="173dp"
+                android:layout_toEndOf="@+id/txtConfirmados"
+                android:layout_toRightOf="@+id/txtConfirmados"
+                android:text="null" />
+
+            <TextView
+                android:id="@+id/lblCasosPor100K"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblConfirmados"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="116dp"
+                android:layout_marginRight="116dp"
+                android:layout_toEndOf="@+id/txtCasosPor100K"
+                android:layout_toRightOf="@+id/txtCasosPor100K"
+                android:text="null" />
+
+            <TextView
+                android:id="@+id/lblData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblCasosPor100K"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="172dp"
+                android:layout_marginRight="172dp"
+                android:layout_toEndOf="@+id/txtData"
+                android:layout_toRightOf="@+id/txtData"
+                android:text="null:" />
+
+            <TextView
+                android:id="@+id/lblTaxaMortalidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblData"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="180dp"
+                android:layout_marginRight="180dp"
+                android:layout_toEndOf="@+id/txtTaxaMortalidade"
+                android:layout_toRightOf="@+id/txtTaxaMortalidade"
+                android:text="null" />
+
+            <TextView
+                android:id="@+id/lblMortesConfirmadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblTaxaMortalidade"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="177dp"
+                android:layout_marginRight="177dp"
+                android:layout_toEndOf="@+id/txtMortesConfirmadas"
+                android:layout_toRightOf="@+id/txtMortesConfirmadas"
+                android:text="null" />
+
+            <TextView
+                android:id="@+id/lblPopulacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblMortesConfirmadas"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="121dp"
+                android:layout_marginRight="121dp"
+                android:layout_toEndOf="@+id/txtPopulacao"
+                android:layout_toRightOf="@+id/txtPopulacao"
+                android:text="null" />
+
+            <TextView
+                android:id="@+id/lblOrderForPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblPopulacao"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="213dp"
+                android:layout_marginRight="213dp"
+                android:layout_toEndOf="@+id/txtOrderForPlace"
+                android:layout_toRightOf="@+id/txtOrderForPlace"
+                android:text="null" />
+
+            <TextView
+                android:id="@+id/lblPlaceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblOrderForPlace"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="223dp"
+                android:layout_marginRight="223dp"
+                android:layout_toEndOf="@+id/txtPlaceType"
+                android:layout_toRightOf="@+id/txtPlaceType"
+                android:text="null" />
+
+            <TextView
+                android:id="@+id/lblEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblPlaceType"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="253dp"
+                android:layout_marginRight="253dp"
+                android:layout_toEndOf="@+id/txtEstado"
+                android:layout_toRightOf="@+id/txtEstado"
+                android:text="null" />
+
+        </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

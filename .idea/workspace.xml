@@ -4,6 +4,7 @@
     <shared>
       <config>
         <device id="4.65in 720p (Galaxy Nexus)" />
+        <target>android-23</target>
       </config>
     </shared>
   </component>
@@ -13,23 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70cae088-8029-46f0-98c8-4d32c2fd29d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/down_scale_sumir.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fade_in.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fade_out.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/mover_direita.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/mover_esquerda.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/degrade.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -40,17 +24,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/SplashActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/json/JsonTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/josenildo/santafilomenacovid_19info/json/JsonTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/fonts/arial.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_activity_toolbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_activity_toolbar.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,9 +63,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="José Nildo &lt;58955100+josenildo-dev@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Alpha0.03" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -193,6 +178,28 @@
       <option name="presentableId" value="Default" />
       <updated>1594482708461</updated>
     </task>
+    <task id="LOCAL-00001" summary="Mudança no background para: #000213">
+      <created>1595279783091</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595279783091</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Mudança no nome do app e criação de uma string padrão para os campos de exibição de dados na MainActivity">
+      <created>1595280045490</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595280045490</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Mudança do tema do app para um tema customizado, visto que com o tema padrão, ao tentar mexer com a AppBar, o aplicativo crashava">
+      <created>1595286742971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595286742971</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,6 +207,10 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Santa-Filomena-Covid-19-Info-for-Androd--API-REST-de-Brasil.io-" />
     </ignored-roots>
+    <MESSAGE value="Mudança no background para: #000213" />
+    <MESSAGE value="Mudança no nome do app e criação de uma string padrão para os campos de exibição de dados na MainActivity" />
+    <MESSAGE value="Mudança do tema do app para um tema customizado, visto que com o tema padrão, ao tentar mexer com a AppBar, o aplicativo crashava" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mudança do tema do app para um tema customizado, visto que com o tema padrão, ao tentar mexer com a AppBar, o aplicativo crashava" />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="26" key="#Gradle" timestamp="1594488071875">
@@ -218,22 +229,26 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="267" y="122" key="AndroidCreateResourceFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1594566416751" />
-    <state width="1320" height="128" key="GridCell.Tab.0.bottom" timestamp="1594584150953">
+    <state x="125" y="0" width="1114" height="732" key="CommitChangelistDialog2" timestamp="1595287116351">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="128" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1594584150953" />
-    <state width="1320" height="128" key="GridCell.Tab.0.center" timestamp="1594584150952">
+    <state x="125" y="0" width="1114" height="732" key="CommitChangelistDialog2/0.0.1366.732@0.0.1366.732" timestamp="1595287116351" />
+    <state width="1320" height="128" key="GridCell.Tab.0.bottom" timestamp="1595286664376">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="128" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1594584150952" />
-    <state width="1320" height="128" key="GridCell.Tab.0.left" timestamp="1594584150950">
+    <state width="1320" height="128" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1595286664376" />
+    <state width="1320" height="128" key="GridCell.Tab.0.center" timestamp="1595286664375">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="128" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1594584150950" />
-    <state width="1320" height="128" key="GridCell.Tab.0.right" timestamp="1594584150952">
+    <state width="1320" height="128" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1595286664375" />
+    <state width="1320" height="128" key="GridCell.Tab.0.left" timestamp="1595286664374">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="128" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1594584150952" />
+    <state width="1320" height="128" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1595286664374" />
+    <state width="1320" height="128" key="GridCell.Tab.0.right" timestamp="1595286664376">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1320" height="128" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1595286664376" />
     <state x="267" y="110" key="IDE.errors.dialog" timestamp="1594483733498">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -246,13 +261,21 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="180" y="0" key="SettingsEditor/0.0.1366.732@0.0.1366.732" timestamp="1594483430079" />
-    <state x="362" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1594513523714">
+    <state x="279" y="102" width="808" height="531" key="Vcs.Push.Dialog.v2" timestamp="1595280130125">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="362" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1594513523714" />
+    <state x="279" y="102" width="808" height="531" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1595280130125" />
+    <state x="362" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1595279338949">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="362" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1595279338949" />
     <state x="261" y="58" key="git4idea.branch.GitSmartOperationDialog" timestamp="1594483814965">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="261" y="58" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.732@0.0.1366.732" timestamp="1594483814965" />
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1595279834340">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1595279834340" />
   </component>
 </project>

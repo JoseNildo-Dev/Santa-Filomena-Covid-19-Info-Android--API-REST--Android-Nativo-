@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">Santa Filomena Covid-19 Info</string>
+    <string name="app_name">Santa Filomena Covid-19 App</string>
     <string name="action_sobre">Sobre</string>
+    <string name="text_baixando">Baixando dados...</string>
 </resources>
